@@ -28,7 +28,9 @@ function onPhotoClick(event) {
         return;
     }
 
-    let gallery = new SimpleLightbox('.gallery a');
+    let gallery = new SimpleLightbox('.gallery a', {
+        captionDelay: 250,
+    });
 
     gallery.on('show.simplelightbox', function () {
 
